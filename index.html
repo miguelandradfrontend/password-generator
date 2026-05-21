@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <title>Miguel Angel Andrades- Password Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <div class="generator-container">
+      <h1>Password Generator</h1>
+
+      <p>Genera contraseñas seguras y personalizadas al instante</p>
+
+      <input 
+        type="text" 
+        id="password-output" 
+        value="Tu contraseña segura aparecerá aquí..." 
+        readonly
+      >
+
+    <div class="length-control">
+    <label for="password-length">
+    Longitud: <span id="length-value">12</span>
+    </label>
+
+    <input 
+    type="range" 
+    id="password-length" 
+    min="6" 
+    max="24" 
+    value="12"
+    >
+    </div>
+
+    <div class="options-container">
+
+  <label>
+    <input type="checkbox" id="uppercase" checked>
+    Mayúsculas (A-Z)
+  </label>
+
+  <label>
+    <input type="checkbox" id="lowercase" checked>
+    Minúsculas (a-z)
+  </label>
+
+  <label>
+    <input type="checkbox" id="numbers" checked>
+    Números (0-9)
+  </label>
+
+  <label>
+    <input type="checkbox" id="symbols">
+    Símbolos (!@#$)
+  </label>
+
+    </div>
+
+      <button id="generate-btn">✨ Generar Contraseña</button>
+
+      <button id="copy-btn">📋 Copiar</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
